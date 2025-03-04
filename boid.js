@@ -1,5 +1,5 @@
 var disp_color = 255;
-var perceptionRadius = 10;
+var perceptionRadius = 70;
 var size = 3;
 class Boid {
     constructor(x,y) {
@@ -9,7 +9,7 @@ class Boid {
         //this.velocity.setMag(random(2,4));
         this.acceleration = createVector(0,0);
         this.maxForce = .2;
-        this.maxSpeed = 3;
+        this.maxSpeed = 5;
     }
 
     edges () {

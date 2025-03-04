@@ -1,5 +1,5 @@
 var birds = [];
-var b_amt = 500;
+var b_amt = 600;
 
 var quad_tree;
 var boundary;
