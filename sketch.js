@@ -9,6 +9,7 @@ var bg = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  canvas.parent('canvas');
   boundary = new Rect(width/2, height/2, width/2, height/2);
   quad_tree = new PointQuadTree(boundary, capacity);
 
