@@ -8,8 +8,8 @@ var capacity = 10;
 var bg = 0;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  canvas.parent('canvas');
+ createCanvas(windowWidth, windowHeight);
+  
   boundary = new Rect(width/2, height/2, width/2, height/2);
   quad_tree = new PointQuadTree(boundary, capacity);
 
@@ -28,7 +28,6 @@ function draw() {
     
   for (var i = 0; i < b_amt; i++) {
     let range = new Circle(birds[i].position.x, birds[i].position.y, birds[i].perceptionRadius);
-    let neighbors = [];
     quad_tree.query(range, birds);
     birds[i].flock(birds);
     birds[i].update();
