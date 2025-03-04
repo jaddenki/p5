@@ -5,10 +5,10 @@ var quad_tree;
 var boundary;
 var capacity = 10;
 
-var bg = 255;
+var bg = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
   boundary = new Rect(width/2, height/2, width/2, height/2);
   quad_tree = new PointQuadTree(boundary, capacity);
 

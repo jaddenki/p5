@@ -1,4 +1,4 @@
-var disp_color = 0;
+var disp_color = 255;
 var perceptionRadius = 10;
 var size = 3;
 class Boid {
