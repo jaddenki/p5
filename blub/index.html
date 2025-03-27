@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>blublub</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div class="controls">
+      <input type="text" id="textInput" value="hello." class="input">
+      <div class="slider-container">
+        <label for="sizeSlider">font size:</label>
+        <input type="range" id="sizeSlider" min="50" max="400" value="200" class="slider">
+      </div>
+      <div class="slider-container">
+        <label for="shapeSize">shape size:</label>
+        <input type="range" id="shapeSizeSlider" min="2" max="12" value="4" class="slider">
+      </div>
+      <button id="colorButton" class="button color-button">change color</button>
+      <button id="shapeButton" class="button shape-button">round or sharp</button>
+    </div>
+    <div class="credit">
+      <p>made by <a href="https://jadden.xyz" target="_blank">jadden</a> :3</p>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+  <footer>
+  </footer>
+</html>

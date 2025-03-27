@@ -1,14 +1,15 @@
 var birds = [];
-var b_amt = 500;
+var b_amt = 600;
 
 var quad_tree;
 var boundary;
 var capacity = 10;
 
-var bg = 255;
+var bg = 0;
 
 function setup() {
-  createCanvas(400, 400);
+ createCanvas(windowWidth, windowHeight);
+  
   boundary = new Rect(width/2, height/2, width/2, height/2);
   quad_tree = new PointQuadTree(boundary, capacity);
 
@@ -27,7 +28,6 @@ function draw() {
     
   for (var i = 0; i < b_amt; i++) {
     let range = new Circle(birds[i].position.x, birds[i].position.y, birds[i].perceptionRadius);
-    let neighbors = [];
     quad_tree.query(range, birds);
     birds[i].flock(birds);
     birds[i].update();
